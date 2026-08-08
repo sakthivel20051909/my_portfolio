@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sakthivel - Software Developer (Web Technologies) Portfolio. Skilled in Java, Spring Boot, MySQL, HTML, CSS, JavaScript, and Git Version Control.">
+  <meta name="keywords" content="Sakthivel, Software Developer, Java Developer, Spring Boot, Web Developer, Portfolio, Kovilpatti, Git">
+  <meta name="author" content="Sakthivel">
+  <title>Sakthivel | Software Developer (Web Technologies) Portfolio</title>
+
+  <!-- FontAwesome Icons & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Glow & Grid Overlay -->
+  <div class="bg-glow-1"></div>
+  <div class="bg-glow-2"></div>
+  <div class="bg-glow-3"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- Header & Navigation -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#hero" class="logo">
+          <i class="fa-solid fa-terminal logo-icon"></i>
+          sakthivel<span>.dev</span>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#terminal" class="nav-link">Git Terminal</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle-btn" id="theme-toggle" title="Toggle Light/Dark Theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button class="btn btn-primary btn-sm" id="open-resume-btn">
+            <i class="fa-solid fa-file-lines"></i> View Resume
+          </button>
+          <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-dot"></span> Open for Software Developer Roles
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Sakthivel</span>
+          </h1>
+          <div class="hero-subtitle-wrapper">
+            <span>I build web applications as a</span>
+            <span class="typing-text" id="typing-text"></span>
+            <span class="cursor-blink"></span>
+          </div>
+          <p class="hero-desc">
+            Enthusiastic Computer Science Engineering graduate seeking a Software Developer role. Skilled in Java, Spring Boot, MySQL, HTML5, CSS3, JavaScript, and experienced in <strong>Git version control workflows</strong>.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i> Explore Projects
+            </a>
+            <a href="#terminal" class="btn btn-emerald">
+              <i class="fa-solid fa-code-branch"></i> Open Git Shell
+            </a>
+            <button class="btn btn-secondary" id="hero-resume-btn">
+              <i class="fa-solid fa-file-lines"></i> View Resume CV
+            </button>
+          </div>
+
+          <div class="quick-stats">
+            <div class="stat-item">
+              <h3>7.46</h3>
+              <p>B.E. CSE CGPA</p>
+            </div>
+            <div class="stat-item">
+              <h3>Full-Stack</h3>
+              <p>Spring Boot & MySQL</p>
+            </div>
+            <div class="stat-item">
+              <h3>Git Ready</h3>
+              <p>Version Control Expert</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-profile-container">
+          <div class="glass-card hero-profile-card">
+            <div class="avatar-wrapper">
+              <img src="assets/profile.jpg" alt="Sakthivel Profile Picture" class="avatar-img">
+            </div>
+
+            <h3 class="profile-name">Sakthivel</h3>
+            <p class="profile-role">&lt;Software Developer /&gt;</p>
+
+            <div class="tech-pill-container">
+              <span class="tech-pill">Java</span>
+              <span class="tech-pill">Spring Boot</span>
+              <span class="tech-pill">MySQL</span>
+              <span class="tech-pill">HTML5 & CSS3</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">Git</span>
+            </div>
+
+            <div class="profile-git-bar">
+              <span><i class="fa-solid fa-code-branch"></i> main branch</span>
+              <span><i class="fa-solid fa-circle-check"></i> 0 conflicts</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Git Terminal Widget -->
+  <section class="section terminal-section" id="terminal">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-terminal"></i> Interactive Shell</div>
+        <h2 class="section-title">Explore My Profile via <span class="gradient-text">Git CLI</span></h2>
+        <p class="section-subtitle">Type Git commands below or click shortcuts to inspect my profile, skills, projects, and commit history interactively.</p>
+      </div>
+
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-controls">
+            <span class="control-dot control-red"></span>
+            <span class="control-dot control-yellow"></span>
+            <span class="control-dot control-green"></span>
+          </div>
+          <div class="terminal-title">
+            <i class="fa-brands fa-git-alt"></i> sakthivel@dev-laptop: ~/portfolio (main)
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #8b949e;">
+            v1.0.0-git
+          </div>
+        </div>
+
+        <div class="terminal-body" id="terminal-body">
+          <div class="terminal-line">
+            <span class="output-green">Welcome to Sakthivel's Interactive Git Terminal!</span>
+          </div>
+          <div class="terminal-line">
+            Type <span class="output-cyan">help</span> or click shortcuts below to see available commands.
+          </div>
+          <div class="terminal-line" style="margin-bottom: 1rem;">
+            ----------------------------------------------------------------------
+          </div>
+
+          <!-- Dynamic Output Container -->
+          <div id="terminal-history"></div>
+
+          <!-- Active Prompt Input Line -->
+          <div class="terminal-input-wrapper">
+            <span class="prompt-user">sakthivel@dev</span>:<span class="prompt-path">~/portfolio</span><span class="prompt-git"> (main)</span>$&nbsp;
+            <input type="text" id="terminal-input" class="terminal-input" placeholder="Type 'git status' or 'help'..." autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+
+        <div class="terminal-shortcuts">
+          <span class="shortcut-label"><i class="fa-solid fa-bolt"></i> Quick Commands:</span>
+          <button class="shortcut-chip" data-cmd="git status">git status</button>
+          <button class="shortcut-chip" data-cmd="git bio">git bio</button>
+          <button class="shortcut-chip" data-cmd="git skills">git skills</button>
+          <button class="shortcut-chip" data-cmd="git projects">git projects</button>
+          <button class="shortcut-chip" data-cmd="git contact">git contact</button>
+          <button class="shortcut-chip" data-cmd="git log">git log</button>
+          <button class="shortcut-chip" data-cmd="clear">clear</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-user"></i> About Me</div>
+        <h2 class="section-title">Passionate <span class="gradient-text">Software Engineer</span></h2>
+        <p class="section-subtitle">Quick learner with strong problem-solving skills and a focus on clean code and reliable software.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-card about-card">
+          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Professional Background</h3>
+          <p>
+            I am a Computer Science and Engineering graduate from <strong>Sree Sowdambika College of Engineering (CGPA: 7.46/10)</strong> with a strong foundation in modern web technology stacks and software engineering fundamentals.
+          </p>
+          <p>
+            My core technical expertise spans <strong>Java, Spring Boot REST APIs, MySQL databases</strong>, and responsive <strong>HTML5/CSS3/JavaScript</strong> web interfaces. I am also fluent in <strong>Git version control</strong> for tracking code, managing repositories, and smooth teamwork.
+          </p>
+          <p>
+            Having completed practical internships in Machine Learning (Profenaa InfoTech) and Computer Networking (Lamda Tech Softics), I possess a versatile, analytical perspective when solving software development challenges.
+          </p>
+
+          <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+            <a href="mailto:sakthivel2102007143@gmail.com" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-envelope"></i> Get In Touch
+            </a>
+            <button class="btn btn-secondary btn-sm" id="about-resume-btn">
+              <i class="fa-solid fa-eye"></i> Quick Resume View
+            </button>
+          </div>
+        </div>
+
+        <div class="strengths-grid">
+          <div class="strength-card">
+            <div class="strength-icon"><i class="fa-brands fa-git-alt"></i></div>
+            <h4 class="strength-title">Version Control</h4>
+            <p class="strength-desc">Git branching, commit history management, merging, and remote repository hosting on GitHub.</p>
+          </div>
+          <div class="strength-card">
+            <div class="strength-icon"><i class="fa-brands fa-java"></i></div>
+            <h4 class="strength-title">Backend & APIs</h4>
+            <p class="strength-desc">Object-oriented Java development, Spring Boot framework, and RESTful API endpoints construction.</p>
+          </div>
+          <div class="strength-card">
+            <div class="strength-icon"><i class="fa-solid fa-database"></i></div>
+            <h4 class="strength-title">Database Design</h4>
+            <p class="strength-desc">MySQL relational database modeling, CRUD operations, indexing, and complex SQL join queries.</p>
+          </div>
+          <div class="strength-card">
+            <div class="strength-icon"><i class="fa-brands fa-js"></i></div>
+            <h4 class="strength-title">Frontend Engineering</h4>
+            <p class="strength-desc">HTML5 semantic layouts, custom CSS3 flex/grid designs, dynamic DOM manipulation using JS.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-layer-group"></i> Technical Matrix</div>
+        <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+        <p class="section-subtitle">A detailed breakdown of my technical capabilities and proficiency levels.</p>
+      </div>
+
+      <div class="skills-container">
+        <!-- Frontend Card -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-code skill-cat-icon"></i>
+            <h3 class="skill-cat-title">Frontend Technologies</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-name"><i class="fa-brands fa-html5" style="color: #e34f26;"></i> HTML5</span>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" data-progress="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-name"><i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i> CSS3 & Styling</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" data-progress="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-name"><i class="fa-brands fa-js" style="color: #f7df1e;"></i> JavaScript (DOM)</span>
+                <span class="skill-level">80%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" data-progress="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-name"><i class="fa-solid fa-mobile-screen" style="color: #38bdf8;"></i> Responsive Design</span>
+                <span class="skill-level">88%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" data-progress="88%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend & DB Card -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-server skill-cat-icon"></i>
+            <h3 class="skill-cat-title">Backend & Database</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-name"><i class="fa-brands fa-java" style="color: #f89820;"></i> Java (OOP Concepts)</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" data-progress="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-name"><i class="fa-solid fa-leaf" style="color: #6db33f;"></i> Spring Boot Framework</span>
+                <span class="skill-level">80%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" data-progress="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-name"><i class="fa-solid fa-database" style="color: #00758f;"></i> MySQL (CRUD & Joins)</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" data-progress="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-name"><i class="fa-solid fa-network-wired" style="color: #a78bfa;"></i> RESTful Web APIs</span>
+                <span class="skill-level">82%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" data-progress="82%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Git & Tools Card -->
+        <div class="glass-card skill-category-card">
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-screwdriver-wrench skill-cat-icon"></i>
+            <h3 class="skill-cat-title">Git & Developer Tools</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-name"><i class="fa-brands fa-git-alt" style="color: #f05032;"></i> Git Version Control</span>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" data-progress="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-name"><i class="fa-brands fa-github" style="color: #ffffff;"></i> GitHub Hosting</span>
+                <span class="skill-level">88%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" data-progress="88%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-name"><i class="fa-brands fa-python" style="color: #3776ab;"></i> Python & ML Basics</span>
+                <span class="skill-level">75%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" data-progress="75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header">
+                <span class="skill-name"><i class="fa-solid fa-globe" style="color: #38bdf8;"></i> Computer Networks</span>
+                <span class="skill-level">78%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" data-progress="78%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-diagram-project"></i> Project Spotlight</div>
+        <h2 class="section-title">Featured <span class="gradient-text">Full-Stack Project</span></h2>
+        <p class="section-subtitle">Real-world web application built with Java, Spring Boot, MySQL database, and HTML/CSS/JS frontend.</p>
+      </div>
+
+      <div class="glass-card project-featured-card">
+        <div class="project-info">
+          <span class="project-tag"><i class="fa-solid fa-motorcycle"></i> Full-Stack Web App</span>
+          <h3 class="project-title">Bike Booking System</h3>
+          <p class="project-desc">
+            A comprehensive Web-based Bike Booking Application designed to streamline customer bike reservations, real-time availability checking, and administrator management.
+          </p>
+
+          <ul class="project-highlights">
+            <li><i class="fa-solid fa-circle-check"></i> <strong>Integrated Booking Form:</strong> Dynamic HTML/CSS frontend connected with MySQL database to record customer bookings seamlessly.</li>
+            <li><i class="fa-solid fa-circle-check"></i> <strong>Full Admin Management Panel:</strong> Complete CRUD operations allowing admins to View, Search, Update, and Delete booking records.</li>
+            <li><i class="fa-solid fa-circle-check"></i> <strong>Spring Boot REST Architecture:</strong> Robust backend API processing request payloads and data validation efficiently.</li>
+            <li><i class="fa-solid fa-circle-check"></i> <strong>Git Repository:</strong> Clean commit history, branch structure, and version tracking maintained throughout development.</li>
+          </ul>
+
+          <div class="project-tech-stack">
+            <span class="tech-pill">Java</span>
+            <span class="tech-pill">Spring Boot</span>
+            <span class="tech-pill">MySQL</span>
+            <span class="tech-pill">HTML5</span>
+            <span class="tech-pill">CSS3</span>
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">REST API</span>
+          </div>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" id="open-project-modal">
+              <i class="fa-solid fa-sliders"></i> View Architecture & Live Demo Simulation
+            </button>
+          </div>
+        </div>
+
+        <div class="project-preview-mockup">
+          <div class="mockup-header">
+            <span class="control-dot control-red"></span>
+            <span class="control-dot control-yellow"></span>
+            <span class="control-dot control-green"></span>
+            <span class="mockup-title">BikeBookingController.java</span>
+          </div>
+          <div class="mockup-body">
+            <pre class="code-snippet"><code><span style="color: #f472b6;">@RestController</span>
+<span style="color: #f472b6;">@RequestMapping</span>(<span style="color: #a78bfa;">"/api/v1/bookings"</span>)
+<span style="color: #38bdf8;">public class</span> <span style="color: #fbbf24;">BikeBookingController</span> {
+
+    <span style="color: #f472b6;">@Autowired</span>
+    <span style="color: #38bdf8;">private</span> BookingService bookingService;
+
+    <span style="color: #f472b6;">@PostMapping</span>
+    <span style="color: #38bdf8;">public</span> ResponseEntity&lt;Booking&gt; <span style="color: #34d399;">createBooking</span>(<span style="color: #f472b6;">@RequestBody</span> BookingDTO dto) {
+        Booking newBooking = bookingService.saveBooking(dto);
+        <span style="color: #38bdf8;">return</span> ResponseEntity.ok(newBooking);
+    }
+
+    <span style="color: #f472b6;">@GetMapping</span>(<span style="color: #a78bfa;">"/admin/all"</span>)
+    <span style="color: #38bdf8;">public</span> List&lt;Booking&gt; <span style="color: #34d399;">getAllBookings</span>() {
+        <span style="color: #38bdf8;">return</span> bookingService.findAllBookings();
+    }
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section (Internships & Education) -->
+  <section class="section timeline-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Journey</div>
+        <h2 class="section-title">Internships & <span class="gradient-text">Education</span></h2>
+        <p class="section-subtitle">My professional hands-on experience and academic track record.</p>
+      </div>
+
+      <div class="timeline-grid">
+        <!-- Internships Column -->
+        <div class="timeline-column">
+          <div class="timeline-column-header">
+            <i class="fa-solid fa-briefcase"></i>
+            <h3>Internships</h3>
+          </div>
+
+          <div class="timeline">
+            <!-- ML Intern -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="glass-card timeline-card">
+                <span class="timeline-date">Jun 2025 – Jul 2025</span>
+                <h4 class="timeline-role">Machine Learning Intern</h4>
+                <div class="timeline-company">Profenaa InfoTech</div>
+                <ul class="timeline-details">
+                  <li>Learned basic machine learning concepts, data preprocessing, and model training workflows.</li>
+                  <li>Worked with core Python data science libraries such as <strong>scikit-learn</strong>, Pandas, and NumPy.</li>
+                  <li>Built and evaluated predictive models using real-world datasets.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Networking Intern -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="glass-card timeline-card">
+                <span class="timeline-date">Feb 2025</span>
+                <h4 class="timeline-role">Networking Intern</h4>
+                <div class="timeline-company">Lamda Tech Softics</div>
+                <ul class="timeline-details">
+                  <li>Learned fundamentals of computer networks, OSI layers, IP protocols, and hardware devices.</li>
+                  <li>Assisted in configuring routers, network switches, and basic local area network (LAN) setups.</li>
+                  <li>Gained hands-on practical experience in network connectivity troubleshooting and diagnosis.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Column -->
+        <div class="timeline-column">
+          <div class="timeline-column-header">
+            <i class="fa-solid fa-building-columns"></i>
+            <h3>Academic Background</h3>
+          </div>
+
+          <div class="timeline">
+            <!-- College -->
+            <div class="timeline-item">
+              <div class="timeline-dot" style="border-color: var(--accent-emerald);"></div>
+              <div class="glass-card timeline-card">
+                <span class="timeline-date">2022 – 2026</span>
+                <h4 class="timeline-role">B.E – Computer Science & Engineering</h4>
+                <div class="timeline-company">Sree Sowdambika College of Engineering</div>
+                <p style="color: var(--accent-emerald); font-weight: 700; margin-bottom: 0.5rem; font-family: var(--font-mono);">
+                  CGPA: 7.46 / 10
+                </p>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                  Core focus on Data Structures, OOP Java, Database Management Systems, Web Engineering, Software Engineering, and Computer Networks.
+                </p>
+              </div>
+            </div>
+
+            <!-- HSC -->
+            <div class="timeline-item">
+              <div class="timeline-dot" style="border-color: var(--accent-emerald);"></div>
+              <div class="glass-card timeline-card">
+                <span class="timeline-date">2021 – 2022</span>
+                <h4 class="timeline-role">HSC (Higher Secondary)</h4>
+                <div class="timeline-company">Government Higher Secondary School</div>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                  Percentage: <strong>69.5%</strong> | Mathematics, Physics, Chemistry stream.
+                </p>
+              </div>
+            </div>
+
+            <!-- SSLC -->
+            <div class="timeline-item">
+              <div class="timeline-dot" style="border-color: var(--accent-emerald);"></div>
+              <div class="glass-card timeline-card">
+                <span class="timeline-date">2019 – 2020</span>
+                <h4 class="timeline-role">SSLC (Secondary School)</h4>
+                <div class="timeline-company">Government Higher Secondary School</div>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                  Percentage: <strong>72.8%</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications Grid -->
+      <div style="margin-top: 5rem;">
+        <div class="section-header" style="margin-bottom: 2.5rem;">
+          <h3 style="font-size: 1.8rem;"><i class="fa-solid fa-award" style="color: var(--accent-cyan);"></i> Certifications & Credentials</h3>
+        </div>
+
+        <div class="cert-grid">
+          <div class="glass-card cert-card">
+            <div class="cert-icon"><i class="fa-brands fa-html5"></i></div>
+            <div>
+              <h4 class="cert-title">Frontend Development – HTML</h4>
+              <div class="cert-issuer">Great Learning Academy</div>
+              <div class="cert-badge"><i class="fa-solid fa-circle-check"></i> Verified Certificate</div>
+            </div>
+          </div>
+
+          <div class="glass-card cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-globe"></i></div>
+            <div>
+              <h4 class="cert-title">Web Development</h4>
+              <div class="cert-issuer">Swayam – IGNOU</div>
+              <div class="cert-badge"><i class="fa-solid fa-circle-check"></i> Verified Certificate</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-paper-plane"></i> Get In Touch</div>
+        <h2 class="section-title">Let's Connect & <span class="gradient-text">Work Together</span></h2>
+        <p class="section-subtitle">Feel free to reach out for software developer positions, technical inquiries, or collaborations.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-cards">
+          <div class="glass-card contact-info-card">
+            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div class="info-label">Email Address</div>
+              <a href="mailto:sakthivel2102007143@gmail.com" class="info-value">sakthivel2102007143@gmail.com</a>
+            </div>
+            <button class="copy-btn" data-copy="sakthivel2102007143@gmail.com" title="Copy Email">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+          </div>
+
+          <div class="glass-card contact-info-card">
+            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="info-label">Phone Number</div>
+              <a href="tel:+919363559792" class="info-value">+91 9363559792</a>
+            </div>
+            <button class="copy-btn" data-copy="+919363559792" title="Copy Phone">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+          </div>
+
+          <div class="glass-card contact-info-card">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="info-label">Location</div>
+              <div class="info-value" style="color: var(--text-primary);">Kovilpatti – 627713, Tamil Nadu</div>
+            </div>
+          </div>
+
+          <div class="glass-card contact-info-card">
+            <div class="info-icon"><i class="fa-brands fa-git-alt"></i></div>
+            <div>
+              <div class="info-label">Version Control</div>
+              <div class="info-value" style="color: var(--accent-emerald);">Git & GitHub Knowledgeable</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card contact-form-card">
+          <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Send a Message</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="form-name">Your Name</label>
+              <input type="text" id="form-name" class="form-input" placeholder="e.g. John Doe" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-email">Your Email</label>
+              <input type="email" id="form-email" class="form-input" placeholder="e.g. john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-subject">Subject</label>
+              <input type="text" id="form-subject" class="form-input" placeholder="Software Developer Position Inquiry" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-message">Message</label>
+              <textarea id="form-message" class="form-textarea" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Details Modal -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="close-project-modal"><i class="fa-solid fa-xmark"></i></button>
+
+      <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+        <span class="project-tag" style="margin: 0;"><i class="fa-solid fa-motorcycle"></i> Interactive Simulator</span>
+      </div>
+
+      <h2 style="font-size: 2rem; margin-bottom: 1rem;">Bike Booking System - Architecture</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+        Deep dive into the architecture, Spring Boot backend structure, and live Admin CRUD simulation.
+      </p>
+
+      <div style="background: var(--bg-main); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); margin-bottom: 1.5rem;">
+        <h4 style="color: var(--accent-cyan); margin-bottom: 0.75rem;"><i class="fa-solid fa-sitemap"></i> System Architecture Flow</h4>
+        <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); line-height: 1.8;">
+          [HTML5/CSS3/JS Frontend Form] --(HTTP POST/JSON)--> [Spring Boot Controller]<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- (DTO Validation)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v<br>
+          [MySQL Database (bookings)] &lt;--(Spring Data JPA/JDBC)-- [Service Layer]
+        </div>
+      </div>
+
+      <h4 style="margin-bottom: 1rem;"><i class="fa-solid fa-table-columns"></i> Admin CRUD Simulator</h4>
+      <div style="background: #0d1117; padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-highlight);">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;">
+          <button class="btn btn-emerald btn-sm" id="sim-add-btn"><i class="fa-solid fa-plus"></i> Add Booking</button>
+          <button class="btn btn-secondary btn-sm" id="sim-refresh-btn"><i class="fa-solid fa-rotate"></i> Refresh Records</button>
+        </div>
+
+        <table style="width: 100%; text-align: left; border-collapse: collapse; font-family: var(--font-mono); font-size: 0.8rem; color: #c9d1d9;">
+          <thead>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--accent-cyan);">
+              <th style="padding: 0.5rem;">ID</th>
+              <th style="padding: 0.5rem;">Customer</th>
+              <th style="padding: 0.5rem;">Bike Model</th>
+              <th style="padding: 0.5rem;">Status</th>
+              <th style="padding: 0.5rem;">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="sim-table-body">
+            <!-- Simulated Rows -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Printable Resume Modal -->
+  <div class="modal-overlay" id="resume-modal">
+    <div class="modal-container" style="max-width: 880px;">
+      <button class="modal-close-btn" id="close-resume-modal"><i class="fa-solid fa-xmark"></i></button>
+
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <h2 style="font-size: 1.8rem;">Sakthivel M - Curriculum Vitae</h2>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;">Software Developer (Java | Spring Boot | MySQL | Web Technologies)</p>
+        </div>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="assets/Sakthivel_M_Resume.pdf" download="Sakthivel_M_Resume.pdf" target="_blank" class="btn btn-primary btn-sm">
+            <i class="fa-solid fa-download"></i> Download PDF
+          </a>
+          <a href="assets/Sakthivel_M_Resume.pdf" target="_blank" class="btn btn-emerald btn-sm">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Original PDF
+          </a>
+          <button class="btn btn-secondary btn-sm" onclick="window.print();">
+            <i class="fa-solid fa-print"></i> Print
+          </button>
+        </div>
+      </div>
+
+      <!-- Formatted Resume Preview Box -->
+      <div style="background: #ffffff; color: #111827; padding: 2.5rem; border-radius: var(--radius-md); font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.6; font-size: 0.9rem; box-shadow: 0 10px 25px rgba(0,0,0,0.5);" id="printable-resume">
+        <!-- Resume Header -->
+        <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid #111827; padding-bottom: 1rem; margin-bottom: 1.25rem;">
+          <div>
+            <h1 style="font-size: 2.2rem; font-weight: 800; letter-spacing: 1px; margin-bottom: 0.2rem; color: #111827; text-transform: uppercase;">SAKTHIVEL M</h1>
+            <p style="font-size: 1rem; font-weight: 600; color: #2563eb; margin-bottom: 0.4rem;">Software Developer (Java | Spring Boot | MySQL | Web Technologies)</p>
+            <p style="font-size: 0.85rem; color: #4b5563; display: flex; flex-wrap: wrap; gap: 0.75rem;">
+              <span><i class="fa-solid fa-location-dot" style="color: #6b7280;"></i> Kovilpatti, Tamil Nadu, India</span>
+              <span>•</span>
+              <span><i class="fa-solid fa-phone" style="color: #6b7280;"></i> +91 9363559792</span>
+              <span>•</span>
+              <span><i class="fa-solid fa-envelope" style="color: #6b7280;"></i> sakthivel2102007143@gmail.com</span>
+            </p>
+          </div>
+          <div style="flex-shrink: 0;">
+            <img src="assets/profile.jpg" alt="Sakthivel M Profile Picture" style="width: 85px; height: 85px; border-radius: 50%; object-fit: cover; object-position: center 15%; border: 3px solid #2563eb; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+          </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div style="margin-bottom: 1.25rem;">
+          <h3 style="border-bottom: 1px dashed #cbd5e1; font-size: 0.95rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; color: #1e293b; letter-spacing: 0.5px;">PROFESSIONAL SUMMARY</h3>
+          <p style="text-align: justify; font-size: 0.88rem; color: #334155;">
+            Computer Science Engineering graduate seeking a Software Developer role, with hands-on experience building full stack web applications using Java, Spring Boot, MySQL, HTML, and CSS. Developed an end-to-end Bike Booking System covering database design, backend APIs, and an admin management panel. Strong problem-solving skills, fast learner, and committed to writing clean, reliable code.
+          </p>
+        </div>
+
+        <!-- Technical Skills -->
+        <div style="margin-bottom: 1.25rem;">
+          <h3 style="border-bottom: 1px dashed #cbd5e1; font-size: 0.95rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; color: #1e293b; letter-spacing: 0.5px;">TECHNICAL SKILLS</h3>
+          <ul style="padding-left: 1.2rem; font-size: 0.88rem; color: #334155; margin: 0;">
+            <li style="margin-bottom: 0.25rem;"><strong>Languages:</strong> Java, JavaScript</li>
+            <li style="margin-bottom: 0.25rem;"><strong>Backend:</strong> Spring Boot, REST APIs, Object-Oriented Programming (OOP)</li>
+            <li style="margin-bottom: 0.25rem;"><strong>Frontend:</strong> HTML5, CSS3, JavaScript (DOM Manipulation)</li>
+            <li style="margin-bottom: 0.25rem;"><strong>Database:</strong> MySQL (CRUD operations, joins, schema design)</li>
+            <li style="margin-bottom: 0.25rem;"><strong>Version Control:</strong> Git</li>
+          </ul>
+        </div>
+
+        <!-- Projects -->
+        <div style="margin-bottom: 1.25rem;">
+          <h3 style="border-bottom: 1px dashed #cbd5e1; font-size: 0.95rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; color: #1e293b; letter-spacing: 0.5px;">PROJECTS</h3>
+          <div style="margin-bottom: 0.5rem;">
+            <p style="font-weight: 700; font-size: 0.92rem; color: #0f172a; margin-bottom: 0.25rem;">
+              Bike Booking System | <span style="font-weight: 500; color: #2563eb;">Java, Spring Boot, MySQL, HTML, CSS</span>
+            </p>
+            <ul style="padding-left: 1.2rem; font-size: 0.88rem; color: #334155; margin: 0;">
+              <li>Built a full stack Bike Booking System with a Spring Boot backend, MySQL database, and HTML/CSS frontend.</li>
+              <li>Designed and integrated a booking form with MySQL to store and manage customer booking details.</li>
+              <li>Developed an admin panel to view, search, update, and delete booking records.</li>
+              <li>Connected frontend and backend to process booking requests and manage data efficiently.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Internship Experience -->
+        <div style="margin-bottom: 1.25rem;">
+          <h3 style="border-bottom: 1px dashed #cbd5e1; font-size: 0.95rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; color: #1e293b; letter-spacing: 0.5px;">INTERNSHIP EXPERIENCE</h3>
+          <div style="margin-bottom: 0.75rem;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; font-weight: 700; font-size: 0.9rem; color: #0f172a;">
+              <span>Machine Learning Intern | <span style="font-weight: 600; color: #475569;">Profenaa InfoTech</span></span>
+              <span style="font-weight: 500; color: #64748b; font-size: 0.85rem;">Jun 2025 – Jul 2025</span>
+            </div>
+            <ul style="padding-left: 1.2rem; font-size: 0.88rem; color: #334155; margin: 0.25rem 0 0 0;">
+              <li>Learned core machine learning concepts and workflows.</li>
+              <li>Worked with Python libraries including scikit-learn to build simple models.</li>
+              <li>Applied models to real-world datasets for hands-on practice.</li>
+            </ul>
+          </div>
+
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: baseline; font-weight: 700; font-size: 0.9rem; color: #0f172a;">
+              <span>Networking Intern | <span style="font-weight: 600; color: #475569;">Lamda Tech Softics</span></span>
+              <span style="font-weight: 500; color: #64748b; font-size: 0.85rem;">Feb 2025</span>
+            </div>
+            <ul style="padding-left: 1.2rem; font-size: 0.88rem; color: #334155; margin: 0.25rem 0 0 0;">
+              <li>Learned fundamentals of computer networks, protocols, and devices.</li>
+              <li>Assisted in configuring routers, switches, and basic network setups.</li>
+              <li>Gained hands-on experience in network troubleshooting.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div style="margin-bottom: 1.25rem;">
+          <h3 style="border-bottom: 1px dashed #cbd5e1; font-size: 0.95rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; color: #1e293b; letter-spacing: 0.5px;">EDUCATION</h3>
+          <div style="margin-bottom: 0.4rem;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; font-size: 0.88rem; color: #334155;">
+              <span><strong>B.E., Computer Science and Engineering</strong> | Sree Sowdambika College of Engineering</span>
+              <span style="font-weight: 600; color: #0f172a;">2022 – 2026</span>
+            </div>
+            <p style="font-size: 0.85rem; color: #2563eb; font-weight: 600; margin: 0.1rem 0 0 0;">CGPA: 7.46 / 10</p>
+          </div>
+          <div style="font-size: 0.85rem; color: #475569; display: flex; flex-direction: column; gap: 0.15rem;">
+            <p><strong>HSC</strong> | Government Higher Secondary School | 2021 – 2022 | <span style="color: #0f172a;">Percentage: 69.5%</span></p>
+            <p><strong>SSLC</strong> | Government Higher Secondary School | 2019 – 2020 | <span style="color: #0f172a;">Percentage: 72.8%</span></p>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div>
+          <h3 style="border-bottom: 1px dashed #cbd5e1; font-size: 0.95rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; color: #1e293b; letter-spacing: 0.5px;">CERTIFICATIONS</h3>
+          <ul style="padding-left: 1.2rem; font-size: 0.88rem; color: #334155; margin: 0;">
+            <li>Frontend Development - HTML | Great Learning Academy</li>
+            <li>Web Development | Swayam - IGNOU</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notification" id="toast">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span id="toast-message">Message sent successfully!</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#hero" class="logo">
+          <i class="fa-solid fa-terminal logo-icon"></i>
+          sakthivel<span>.dev</span>
+        </a>
+        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+          Building solid software with Java, Spring Boot, Web Technologies, and Git Version Control.
+        </p>
+
+        <div class="footer-git-commit">
+          <i class="fa-brands fa-git-alt" style="color: var(--accent-emerald);"></i>
+          <span>git commit -m</span> "Initial release of Sakthivel's Developer Portfolio"
+        </div>
+
+        <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 1rem;">
+          &copy; 2026 Sakthivel. All rights reserved. Kovilpatti, Tamil Nadu.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
