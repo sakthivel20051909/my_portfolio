@@ -402,51 +402,53 @@
     <div class="container">
       <div class="section-header">
         <div class="section-tag"><i class="fa-solid fa-diagram-project"></i> Project Spotlight</div>
-        <h2 class="section-title">Featured <span class="gradient-text">Full-Stack Project</span></h2>
-        <p class="section-subtitle">Real-world web application built with Java, Spring Boot, MySQL database, and HTML/CSS/JS frontend.</p>
+        <h2 class="section-title">Featured <span class="gradient-text">Full-Stack Projects</span></h2>
+        <p class="section-subtitle">Production-ready web applications built with Java, Spring Boot, Spring Data JPA, MySQL, and modern JavaScript frontends.</p>
       </div>
 
-      <div class="glass-card project-featured-card">
-        <div class="project-info">
-          <span class="project-tag"><i class="fa-solid fa-motorcycle"></i> Full-Stack Web App</span>
-          <h3 class="project-title">Bike Booking System</h3>
-          <p class="project-desc">
-            A comprehensive Web-based Bike Booking Application designed to streamline customer bike reservations, real-time availability checking, and administrator management.
-          </p>
+      <div class="projects-list" style="display: flex; flex-direction: column; gap: 2.5rem;">
+        <!-- Project 1: Bike Booking System -->
+        <div class="glass-card project-featured-card">
+          <div class="project-info">
+            <span class="project-tag"><i class="fa-solid fa-motorcycle"></i> Full-Stack Web App</span>
+            <h3 class="project-title">Bike Booking System</h3>
+            <p class="project-desc">
+              A comprehensive Web-based Bike Booking Application designed to streamline customer bike reservations, real-time availability checking, and administrator management.
+            </p>
 
-          <ul class="project-highlights">
-            <li><i class="fa-solid fa-circle-check"></i> <strong>Integrated Booking Form:</strong> Dynamic HTML/CSS frontend connected with MySQL database to record customer bookings seamlessly.</li>
-            <li><i class="fa-solid fa-circle-check"></i> <strong>Full Admin Management Panel:</strong> Complete CRUD operations allowing admins to View, Search, Update, and Delete booking records.</li>
-            <li><i class="fa-solid fa-circle-check"></i> <strong>Spring Boot REST Architecture:</strong> Robust backend API processing request payloads and data validation efficiently.</li>
-            <li><i class="fa-solid fa-circle-check"></i> <strong>Git Repository:</strong> Clean commit history, branch structure, and version tracking maintained throughout development.</li>
-          </ul>
+            <ul class="project-highlights">
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Integrated Booking Form:</strong> Dynamic HTML/CSS frontend connected with MySQL database to record customer bookings seamlessly.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Full Admin Management Panel:</strong> Complete CRUD operations allowing admins to View, Search, Update, and Delete booking records.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Spring Boot REST Architecture:</strong> Robust backend API processing request payloads and data validation efficiently.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Git Repository:</strong> Clean commit history, branch structure, and version tracking maintained throughout development.</li>
+            </ul>
 
-          <div class="project-tech-stack">
-            <span class="tech-pill">Java</span>
-            <span class="tech-pill">Spring Boot</span>
-            <span class="tech-pill">MySQL</span>
-            <span class="tech-pill">HTML5</span>
-            <span class="tech-pill">CSS3</span>
-            <span class="tech-pill">JavaScript</span>
-            <span class="tech-pill">REST API</span>
+            <div class="project-tech-stack">
+              <span class="tech-pill">Java</span>
+              <span class="tech-pill">Spring Boot</span>
+              <span class="tech-pill">MySQL</span>
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS3</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">REST API</span>
+            </div>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <button class="btn btn-primary" id="open-project-modal">
+                <i class="fa-solid fa-sliders"></i> View Architecture & Live Demo Simulation
+              </button>
+            </div>
           </div>
 
-          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-            <button class="btn btn-primary" id="open-project-modal">
-              <i class="fa-solid fa-sliders"></i> View Architecture & Live Demo Simulation
-            </button>
-          </div>
-        </div>
-
-        <div class="project-preview-mockup">
-          <div class="mockup-header">
-            <span class="control-dot control-red"></span>
-            <span class="control-dot control-yellow"></span>
-            <span class="control-dot control-green"></span>
-            <span class="mockup-title">BikeBookingController.java</span>
-          </div>
-          <div class="mockup-body">
-            <pre class="code-snippet"><code><span style="color: #f472b6;">@RestController</span>
+          <div class="project-preview-mockup">
+            <div class="mockup-header">
+              <span class="control-dot control-red"></span>
+              <span class="control-dot control-yellow"></span>
+              <span class="control-dot control-green"></span>
+              <span class="mockup-title">BikeBookingController.java</span>
+            </div>
+            <div class="mockup-body">
+              <pre class="code-snippet"><code><span style="color: #f472b6;">@RestController</span>
 <span style="color: #f472b6;">@RequestMapping</span>(<span style="color: #a78bfa;">"/api/v1/bookings"</span>)
 <span style="color: #38bdf8;">public class</span> <span style="color: #fbbf24;">BikeBookingController</span> {
 
@@ -464,6 +466,85 @@
         <span style="color: #38bdf8;">return</span> bookingService.findAllBookings();
     }
 }</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Expense Splitter (Splitwise-style) -->
+        <div class="glass-card project-featured-card">
+          <div class="project-info">
+            <span class="project-tag" style="background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.3); color: var(--accent-emerald);"><i class="fa-solid fa-calculator"></i> Full-Stack & Algorithm</span>
+            <h3 class="project-title">Expense Splitter <span style="font-size: 1.1rem; color: var(--text-secondary); font-weight: 500;">(Splitwise-style)</span></h3>
+            <p class="project-desc">
+              A full-stack expense management platform that logs shared group expenses, tracks individual net balances, and settles group debts in the minimum possible transactions using a greedy priority-queue algorithm.
+            </p>
+
+            <ul class="project-highlights">
+              <li><i class="fa-solid fa-circle-check"></i> <strong>REST API & Data Modeling:</strong> Built Spring Boot backend APIs to create groups, log shared expenses, and track member net balances. Modeled <code>Group</code>, <code>Expense</code>, <code>ExpenseSplit</code>, and <code>User</code> entities using Spring Data JPA.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Greedy Debt-Simplification Algorithm:</strong> Implemented a priority queue algorithm settling group balances in the fewest possible transactions (at most <code>n-1</code> for <code>n</code> members).</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Decoupled DTO Architecture:</strong> Designed clean DTO models (<code>ExpenseRequest</code>, <code>SettlementTransaction</code>) to separate API contracts from database entities.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Vanilla JS Web Dashboard:</strong> Built a dynamic frontend using HTML5, CSS3, and JavaScript to create groups, add expenses, and view real-time settlement summaries.</li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-pill">Java</span>
+              <span class="tech-pill">Spring Boot</span>
+              <span class="tech-pill">Spring Data JPA</span>
+              <span class="tech-pill">MySQL</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">PriorityQueue</span>
+              <span class="tech-pill">REST API</span>
+            </div>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <button class="btn btn-emerald" id="open-expense-modal">
+                <i class="fa-solid fa-sliders"></i> View Architecture & Debt Simplification Simulator
+              </button>
+            </div>
+          </div>
+
+          <div class="project-preview-mockup">
+            <div class="mockup-header">
+              <span class="control-dot control-red"></span>
+              <span class="control-dot control-yellow"></span>
+              <span class="control-dot control-green"></span>
+              <span class="mockup-title">DebtSettlementService.java</span>
+            </div>
+            <div class="mockup-body">
+              <pre class="code-snippet"><code><span style="color: #f472b6;">@Service</span>
+<span style="color: #38bdf8;">public class</span> <span style="color: #fbbf24;">DebtSettlementService</span> {
+
+    <span style="color: #38bdf8;">public</span> List&lt;SettlementTransaction&gt; <span style="color: #34d399;">simplifyDebts</span>(Long groupId) {
+        Map&lt;User, BigDecimal&gt; balances = calculateNetBalances(groupId);
+        
+        PriorityQueue&lt;BalanceNode&gt; debtors = <span style="color: #38bdf8;">new</span> PriorityQueue&lt;&gt;(Comparator.comparing(b -&gt; b.amount));
+        PriorityQueue&lt;BalanceNode&gt; creditors = <span style="color: #38bdf8;">new</span> PriorityQueue&lt;&gt;((a, b) -&gt; b.amount.compareTo(a.amount));
+        
+        // Populate max-heap & min-heap for greedy debt settlement
+        balances.forEach((user, balance) -&gt; {
+            <span style="color: #38bdf8;">if</span> (balance.compareTo(BigDecimal.ZERO) &lt; 0) 
+                debtors.add(<span style="color: #38bdf8;">new</span> BalanceNode(user, balance.abs()));
+            <span style="color: #38bdf8;">else if</span> (balance.compareTo(BigDecimal.ZERO) &gt; 0) 
+                creditors.add(<span style="color: #38bdf8;">new</span> BalanceNode(user, balance));
+        });
+
+        List&lt;SettlementTransaction&gt; transactions = <span style="color: #38bdf8;">new</span> ArrayList&lt;&gt;();
+        <span style="color: #38bdf8;">while</span> (!debtors.isEmpty() &amp;&amp; !creditors.isEmpty()) {
+            BalanceNode debtor = debtors.poll();
+            BalanceNode creditor = creditors.poll();
+            BigDecimal min = debtor.amount.min(creditor.amount);
+            
+            transactions.add(<span style="color: #38bdf8;">new</span> SettlementTransaction(debtor.user, creditor.user, min));
+            
+            <span style="color: #38bdf8;">if</span> (debtor.amount.compareTo(min) &gt; 0) 
+                debtors.add(<span style="color: #38bdf8;">new</span> BalanceNode(debtor.user, debtor.amount.subtract(min)));
+            <span style="color: #38bdf8;">if</span> (creditor.amount.compareTo(min) &gt; 0) 
+                creditors.add(<span style="color: #38bdf8;">new</span> BalanceNode(creditor.user, creditor.amount.subtract(min)));
+        }
+        <span style="color: #38bdf8;">return</span> transactions; <span style="color: #8b949e;">// Max n-1 transactions</span>
+    }
+}</code></pre>
+            </div>
           </div>
         </div>
       </div>
@@ -729,6 +810,86 @@
     </div>
   </div>
 
+  <!-- Expense Splitter Architecture & Simulator Modal -->
+  <div class="modal-overlay" id="expense-modal">
+    <div class="modal-container" style="max-width: 900px;">
+      <button class="modal-close-btn" id="close-expense-modal"><i class="fa-solid fa-xmark"></i></button>
+
+      <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+        <span class="project-tag" style="margin: 0; background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.3); color: var(--accent-emerald);"><i class="fa-solid fa-calculator"></i> Interactive Simulator</span>
+      </div>
+
+      <h2 style="font-size: 2rem; margin-bottom: 1rem;">Expense Splitter - Architecture & Algorithm</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+        Explore the JPA domain model, DTO contracts, and test the greedy PriorityQueue debt-simplification algorithm live.
+      </p>
+
+      <!-- Architecture Diagram & Entities -->
+      <div style="background: var(--bg-main); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); margin-bottom: 1.5rem;">
+        <h4 style="color: var(--accent-emerald); margin-bottom: 0.75rem;"><i class="fa-solid fa-sitemap"></i> Data Modeling & System Architecture</h4>
+        <div style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-secondary); line-height: 1.8;">
+          [Vanilla JS Frontend] --(HTTP POST DTOs: ExpenseRequest)--> [Spring Boot Controller]<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- (Decoupled DTO &lt;-&gt; Entity Mapper)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v<br>
+          [MySQL DB (Group, User, Expense, ExpenseSplit)] &lt;--(Spring Data JPA)-- [DebtSettlementService (PriorityQueue n-1)]
+        </div>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem;">
+          <span style="background: rgba(255,255,255,0.05); padding: 0.2rem 0.5rem; border-radius: 4px; font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan);">JPA Entities: User 1:N Group, Expense 1:N ExpenseSplit</span>
+          <span style="background: rgba(255,255,255,0.05); padding: 0.2rem 0.5rem; border-radius: 4px; font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-emerald);">DTOs: ExpenseRequest, SettlementTransaction</span>
+        </div>
+      </div>
+
+      <!-- Debt Simplification Interactive Simulator -->
+      <h4 style="margin-bottom: 0.75rem;"><i class="fa-solid fa-bolt"></i> Greedy Debt Simplification Simulator</h4>
+      <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1rem;">
+        Add expenses among group members and click <strong>"Run PriorityQueue Settlement Algorithm"</strong> to see how the priority-queue algorithm reduces overall transactions to at most <em>n-1</em>.
+      </p>
+
+      <div style="background: #0d1117; padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-highlight);">
+        <!-- Quick Action Preset Expenses -->
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 1.25rem; flex-wrap: wrap; align-items: center;">
+          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: #8b949e;">Quick Expense Actions:</span>
+          <button class="btn btn-emerald btn-sm" id="expense-preset-1"><i class="fa-solid fa-utensils"></i> Add Dinner ($120 - Sakthivel Paid)</button>
+          <button class="btn btn-secondary btn-sm" id="expense-preset-2"><i class="fa-solid fa-car"></i> Add Cab ($90 - Arun Paid)</button>
+          <button class="btn btn-secondary btn-sm" id="expense-reset-btn" style="color: #ef4444;"><i class="fa-solid fa-rotate-left"></i> Reset Balances</button>
+        </div>
+
+        <!-- Group Balances Table & Settlements -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+          <div>
+            <h5 style="font-size: 0.85rem; font-family: var(--font-mono); color: var(--accent-cyan); margin-bottom: 0.5rem;">Group Member Net Balances</h5>
+            <table style="width: 100%; text-align: left; border-collapse: collapse; font-family: var(--font-mono); font-size: 0.8rem; color: #c9d1d9;">
+              <thead>
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--accent-cyan);">
+                  <th style="padding: 0.4rem;">Member</th>
+                  <th style="padding: 0.4rem;">Paid</th>
+                  <th style="padding: 0.4rem;">Owed</th>
+                  <th style="padding: 0.4rem;">Net</th>
+                </tr>
+              </thead>
+              <tbody id="expense-balances-body">
+                <!-- Dynamically Rendered -->
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+            <h5 style="font-size: 0.85rem; font-family: var(--font-mono); color: var(--accent-emerald); margin-bottom: 0.5rem;">Optimal Settlements (At most n-1)</h5>
+            <div id="expense-settlements-container" style="background: rgba(0,0,0,0.4); border: 1px dashed rgba(16, 185, 129, 0.4); border-radius: var(--radius-sm); padding: 0.75rem; min-height: 120px; font-family: var(--font-mono); font-size: 0.8rem;">
+              <!-- Settlements Rendered Here -->
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: right;">
+          <button class="btn btn-primary btn-sm" id="run-settlement-btn">
+            <i class="fa-solid fa-play"></i> Run PriorityQueue Settlement Algorithm
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Printable Resume Modal -->
   <div class="modal-overlay" id="resume-modal">
     <div class="modal-container" style="max-width: 880px;">
@@ -776,7 +937,7 @@
         <div style="margin-bottom: 1.25rem;">
           <h3 style="border-bottom: 1px dashed #cbd5e1; font-size: 0.95rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; color: #1e293b; letter-spacing: 0.5px;">PROFESSIONAL SUMMARY</h3>
           <p style="text-align: justify; font-size: 0.88rem; color: #334155;">
-            Computer Science Engineering graduate seeking a Software Developer role, with hands-on experience building full stack web applications using Java, Spring Boot, MySQL, HTML, and CSS. Developed an end-to-end Bike Booking System covering database design, backend APIs, and an admin management panel. Strong problem-solving skills, fast learner, and committed to writing clean, reliable code.
+            Computer Science Engineering graduate seeking a Software Developer role, with hands-on experience building full stack web applications using Java, Spring Boot, Spring Data JPA, MySQL, HTML, and CSS. Developed an Expense Splitter platform with priority queue debt-simplification algorithms and a Bike Booking System with full admin CRUD management. Strong problem-solving skills, fast learner, and committed to writing clean, reliable code.
           </p>
         </div>
 
@@ -785,7 +946,7 @@
           <h3 style="border-bottom: 1px dashed #cbd5e1; font-size: 0.95rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; color: #1e293b; letter-spacing: 0.5px;">TECHNICAL SKILLS</h3>
           <ul style="padding-left: 1.2rem; font-size: 0.88rem; color: #334155; margin: 0;">
             <li style="margin-bottom: 0.25rem;"><strong>Languages:</strong> Java, JavaScript</li>
-            <li style="margin-bottom: 0.25rem;"><strong>Backend:</strong> Spring Boot, REST APIs, Object-Oriented Programming (OOP)</li>
+            <li style="margin-bottom: 0.25rem;"><strong>Backend:</strong> Spring Boot, Spring Data JPA, REST APIs, Object-Oriented Programming (OOP)</li>
             <li style="margin-bottom: 0.25rem;"><strong>Frontend:</strong> HTML5, CSS3, JavaScript (DOM Manipulation)</li>
             <li style="margin-bottom: 0.25rem;"><strong>Database:</strong> MySQL (CRUD operations, joins, schema design)</li>
             <li style="margin-bottom: 0.25rem;"><strong>Version Control:</strong> Git</li>
@@ -795,6 +956,19 @@
         <!-- Projects -->
         <div style="margin-bottom: 1.25rem;">
           <h3 style="border-bottom: 1px dashed #cbd5e1; font-size: 0.95rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; color: #1e293b; letter-spacing: 0.5px;">PROJECTS</h3>
+          <div style="margin-bottom: 0.8rem;">
+            <p style="font-weight: 700; font-size: 0.92rem; color: #0f172a; margin-bottom: 0.25rem;">
+              Expense Splitter (Splitwise-style) | <span style="font-weight: 500; color: #2563eb;">Java, Spring Boot, Spring Data JPA, MySQL, JavaScript</span>
+            </p>
+            <ul style="padding-left: 1.2rem; font-size: 0.88rem; color: #334155; margin: 0;">
+              <li>Built a REST API backend to create groups, log shared expenses, and calculate each member's net balance.</li>
+              <li>Modeled Group, Expense, ExpenseSplit, and User entities with JPA to track who paid and who owes what.</li>
+              <li>Implemented a greedy debt-simplification algorithm using priority queues to settle group balances in at most n-1 transactions.</li>
+              <li>Designed DTOs (ExpenseRequest, SettlementTransaction) to cleanly separate API contracts from entity models.</li>
+              <li>Built a vanilla JS/HTML/CSS frontend to create groups, add expenses, and view real-time settlement summaries.</li>
+            </ul>
+          </div>
+
           <div style="margin-bottom: 0.5rem;">
             <p style="font-weight: 700; font-size: 0.92rem; color: #0f172a; margin-bottom: 0.25rem;">
               Bike Booking System | <span style="font-weight: 500; color: #2563eb;">Java, Spring Boot, MySQL, HTML, CSS</span>
